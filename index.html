@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template</title>
+    <style type="text/css">
+        body {
+            margin: 3% 3% 3% 3%;
+            background-color: blueviolet;
+            font-family: Ysabeau;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+
+        }
+
+        .content {
+            border-radius: 50px 50px 50px 50px;
+            background-color: black;
+            color: #fff;
+            padding-left: 3%;
+            padding-top: 2%;
+            padding-right: 4%;
+
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img{
+            size: 40px;
+            width: 40px;
+            margin-right: 10px;
+        }
+
+        .logo h1 {
+            font-weight: bold;
+            margin-right: 50px;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+        }
+        .menu h4 {
+            margin-right: 10px;
+            font-weight: lighter;
+        }
+        .menu input {
+            margin-left: 150px;
+            margin-right: 50px;
+            background-color: rgba(58, 57, 57, 0.274);
+            color: #fff;   
+            border-radius: 10px;
+            width: 250px;
+            border-color: black;
+            font-size: 10px;
+            padding: 10px;
+            padding-left: 30px;
+        }
+
+        .menu .search {
+            position: relative;
+            left: -330px;
+            width: 15px;
+        }
+
+        .menu .message, .notification{
+            margin-right: 20px;
+        }
+
+        .menu .notification {
+            filter: brightness(0.5);
+        }
+
+        .menu .user {
+            border-radius: 10%;
+            size: 40px;
+            width: 40px;
+            border-style: inset;
+            border-width: 2px;
+            border-color: blueviolet
+        }
+
+        .icon img{
+            filter: brightness(0.5);
+            width: 30px;
+            margin-bottom: 50px;
+            display: block;
+        }
+
+        .icon img:hover {
+            border-radius: 10px;
+            border-style: outset;
+            border-width: 2px;
+            border-color: blueviolet;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-rows:1fr 20px 1fr;
+            row-gap: 25px;
+        }
+
+        .principal {
+            display: grid;
+            grid-template-columns: 1fr 4fr 4fr;
+        }
+
+        article h1{
+            font-size: 50px;
+        }
+
+        .video {
+            font-size: 20px;
+            color: darkgrey;
+        }
+        video {
+            width: 100%;
+            border-radius: 30px;
+            box-shadow: 2px 2px 2px #fff;
+        }
+        
+        .secondery {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            margin-left: 150px;
+            column-gap:20px;
+            row-gap: 50px;
+        }
+        p {
+            margin-left: 150px;
+        }
+        .secondery img {
+            box-shadow: 2px 2px 2px #fff;
+            width: 250px;
+            height: 150px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <nav>
+            <div class="logo">
+                <img src="xplay.png" alt="">
+                <h1>XPLAY</h1>
+            </div>
+            <div class="menu">
+                <h4> TOP STREAMING</h4>
+                <h4>GAMES</h4>
+                <h4>TEAMS</h4>
+                <input type="text" placeholder="Search">
+                <img src="icons8-search-30.png" alt="" class="search" >
+                <img src="icons8-message-25.png" alt="" class="message">
+                <img src="icons8-notification-24.png" alt="" class="notification">
+                <h4>Mikael</h4>
+                <img src="mikael.png" alt="" class="user" >
+            </div>
+        </nav><br>
+        <div class="grid">
+            <div class="principal">
+                <div class="icon">
+                    <a href="#"><img src="icons8-home-48.png" alt=""></a>
+                    <a href="#"><img src="icons8-plus-48.png" alt=""></a>
+                    <a href="#"><img src="icons8-card-48.png" alt=""></a>
+                    <a href="#"><img src="icons8-features-list-50.png" alt=""></a>
+                    <a href="#"><img src="icons8-settings-48.png" alt=""></a>
+                </div>
+                <article class="">
+                    <h1>PLAY COMPETE, FOLLOW POPULAR STREAMERS</h1>
+                </article>
+                <article class="video">
+                    <video src="main.mp4" controls></video>
+                    Battle in galaxy with Franck Slader
+                </article>
+            </div>
+            
+            <p> Streams of the day</p>
+        
+            <div class="secondery">
+                <img src="1.png" alt="">
+                <img src="2.png" alt="">
+                <img src="3.png" alt="">
+                <img src="4.png" alt="">
+                <img src="5.png" alt="">
+                <img src="6.png" alt="">
+                <img src="7.png" alt="">
+                <img src="8.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
